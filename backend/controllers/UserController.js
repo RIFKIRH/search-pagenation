@@ -25,7 +25,7 @@ export const getUsers = async (req, res) => {
      },
         limit: limit, // Mengatur batasan jumlah data yang diambil
         offset: offset, // Mengatur offset untuk pagination
-        order: [['id', 'DESC']], // Mengurutkan berdasarkan ID secara ascending
+        order: [['id', 'ASC']], // Mengurutkan berdasarkan ID secara ascending
 });
     res.json({
         result: result,
